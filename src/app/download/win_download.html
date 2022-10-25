@@ -1,0 +1,68 @@
+<div id="win-download-panel"fxLayout="column" fxLayoutAlign="start">
+    <div fxLayout="row" fxLayoutAlign="center" class="header-panel">
+        <h2>SkyDRM Windows Client Download</h2>
+
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="center">
+        <div fxLayout="column" fxLayoutAlign="start" [fxShow]="showEmailTab">
+            <form [formGroup]="downloadForm" (ngSubmit)="requestDownload(downloadForm.value)">
+                <div fxLayout="row" fxLayoutAlign="start">
+                    <div fxLayout="column" fxLayoutAlign="start">
+                        <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="1em">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Email</mat-label>
+                                <input matInput type="text" maxlength="100" placeholder=" " formControlName="email" required>
+                                <mat-error *ngFor="let validation of validation_messages.email">
+                                <mat-error class="error-message" *ngIf="downloadForm.get('email').hasError(validation.type) && (downloadForm.get('email').dirty || downloadForm.get('email').touched)">{{validation.message}}</mat-error>
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="center">
+                    <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="1em">
+                        <div fxFlex class="button-panel">
+                            <button type="submit" mat-raised-button class="button-item">Download Files</button>
+                        </div>
+                    </div>
+                </div>      
+            </form>    
+        </div>
+        
+        <div fxLayout="column" fxLayoutAlign="start" fxFlex="80vw" [fxHide]="showEmailTab">
+        
+            <div fxLayout="row" fxLayoutAlign="center">
+                <h1>Download Files</h1>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center">
+                <a class="download-zip-file" href="#" (click)="downloadWinZip()">Download SkyDRM RMD Installer
+                </a>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center">
+                <div fxLayout="column" fxLayoutAlign="center" >
+                    <h1>Installation Instructions</h1>
+                </div>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center">
+                <div fxLayout="column" fxLayoutAlign="center" ngClass.gt-sm="instruction-panel">
+                    <div>1. Click on the link above to start downloading the installer file</div>
+                    <div>2. Extract the installer file into a folder</div>
+                    <div>3. Click on {{winExe}} in the folder to run the installation</div>
+                </div>   
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="center">
+                <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="1em">
+                    <div fxFlex class="button-panel">
+                        <button type="button" mat-raised-button class="button-item" routerLink="/home">Back</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+</div>
+

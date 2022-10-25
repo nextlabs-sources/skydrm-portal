@@ -1,0 +1,71 @@
+.thumbnail-image {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.thumbnail-panel {
+    width: 100%;
+//    height: 2em;
+//    max-width: 100%;
+//    min-width: 100%;
+}
+
+.thumbnail-panel:hover {
+    cursor: pointer;
+}
+
+.my-content {
+    font-size: 0.9em;
+    line-height: 1.3em;
+    font-weight: bold;
+    min-height: 5em;
+}
+
+.img-panel {
+    padding: 0 0 1em 0;
+    
+}
+
+.boxed-img {
+    max-width: 100%;
+    //min-width: 100%;
+}
+
+.mini-img-panel {
+    padding: 0 0.5em 0 0.5em;
+}
+
+.mini-thumbnail-panel {
+    width: 100%;
+    cursor: pointer;
+}
+
+.mini-thumbnail-image {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.mini-content {
+    padding-top: 1em;
+    font-size: 0.7em;
+    line-height: 1.3em;
+    font-weight: bold;
+}
+
+.left-panel {
+    text-align: right;
+}
+
+.right-panel {
+    text-align: left;
+}
+
+.arrow-panel {
+    //padding-top: 2em;
+}
+
+.arrow-panel:hover {
+    //padding-top: 2em;
+    color: red;
+    cursor: pointer;
+}

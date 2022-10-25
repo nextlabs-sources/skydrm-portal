@@ -1,0 +1,61 @@
+.web-panel {
+    padding-top: 5em;
+}
+.questionaire-panel {
+    background-image: url("/assets/img/cloudaz/questionnaire_bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    padding-top:2em;
+    padding-bottom: 2em;
+    /*
+    background: #C4C4C4;
+    */
+}
+
+.header-label {
+    font-family: Lato;
+    color: #36424A;
+    text-align: center;
+}
+
+.sub-header-label {
+    font-family: Lato;
+    color: #36424A;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.question-label {
+    font-family: Lato;
+    color: #36424A;
+}
+
+.answer-input {
+    font-family: Lato;
+    color: #36424A;
+}
+
+.button-item {
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+.success-panel {
+    padding-bottom: 5em;
+    font-family: Lato;
+    font-style: normal;
+    font-size: 1.2em;
+  
+}
+
+.error-panel {
+    padding-bottom: 2em;
+    font-family: Lato;
+    font-style: normal;
+    font-size: 1.2em;
+    color: red;
+
+  
+}

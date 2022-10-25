@@ -1,0 +1,51 @@
+<div id="tutorial" fxLayout="row" fxLayoutAlign="center" class="section-panel">
+   <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="1em">
+      <div fxLayout="row" fxLayoutAlign="center">
+          <span class="sub-header">Video Tutorial</span>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="center">
+          <div fxLayout="column" fxLayoutAlign="center center" fxFlex="80vw">
+            <span class="content-1">Step by step guide on how to use SkyDRM.</span>
+          </div>
+      </div>
+
+      <div fxLayout="row wrap" fxLayoutAlign="center center" fxHide.lt-md>
+         <div fxFlex="70vw" class="content-tile">
+            <div fxLayout="column" fxLayoutAlign="center">
+               <div fxLayout="row" fxLayoutAlign="center">
+                  <div fxFlex="35vw">
+                        <img class="icon-img" src="assets/img/skydrm/tutorial_video.png" alt="Tutorial Video" />
+                  </div>
+                  <div fxFlex="35vw">
+                     <div><span class="sub-header-2">Self Paced Learning</span></div>
+                     <div><span class="sub-content-2">Find the video tutorials to help you understand SkyDRM through using it.
+                           No matter if you are new or experienced to SkyDRM, these tutorials will
+                           help you in accomplishing your missions.
+                        </span>
+                     </div>
+                     <input type="button" class="button video-button is-black" value="Go to video" (click)="gotoVideo()" />
+                  </div>
+               </div>
+            </div>
+         </div>         
+      </div>
+
+      <div fxLayout="row wrap" fxLayoutAlign="center center" fxHide.gt-sm>
+         <div fxFlex="90vw" class="content-tile">
+            <div fxLayout="column" fxLayoutAlign="center center">
+               <div>
+                  <img class="icon-img" src="assets/img/skydrm/tutorial_video.png" alt="Tutorial Video" />
+               </div>
+               <div><span class="m-sub-header-2">Self Paced Learning</span></div>
+               <div><span class="sub-content-2">Find the video tutorials to help you understand SkyDRM through using it.
+                     No matter if you are new or experienced to SkyDRM, these tutorials will
+                     help you in accomplishing your missions.
+                  </span>
+               </div>
+               <input type="button" class="button video-button is-black" value="Go to video" (click)="gotoVideo()" />
+            </div>
+         </div>         
+      </div>
+   </div>
+</div>

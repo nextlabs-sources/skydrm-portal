@@ -1,0 +1,22 @@
+{
+    "whitePapers": {
+        "title": "White papers",
+        "list": [
+            {
+                "title": "A New Approach to Enterprise Digital Rights Management (EDRM)",
+                "desc": "While enterprise digital rights management (EDRM) has been around for more than a decade, it has yet to reach a tipping point",
+                "link": "https://www.nextlabs.com/resources/white-papers/whitepaper-a-new-approach-to-enterprise-digital-rights-management-edrm/"
+            }
+        ]
+    },
+    "datasheets": {
+        "title": "Datasheets",
+        "list": [
+            {
+                "title": "SkyDRM - NextLabs EDRM",
+                "desc": "Read about the digital rights management service that enables you to share and protect your documents anywhere, anytime",
+                "link": "https://www.nextlabs.com/wp-content/uploads/DS-SkyDRM-1.pdf"
+            }
+        ]
+    }
+}

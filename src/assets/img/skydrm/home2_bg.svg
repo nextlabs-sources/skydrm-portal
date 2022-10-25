@@ -1,0 +1,38 @@
+<svg width="1920" height="220" viewBox="0 0 1920 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.3">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="220">
+<path d="M1920 0H0V219.999H1920V0Z" fill="#36424A"/>
+</mask>
+<g mask="url(#mask0)">
+<path d="M287 176L422 296L525 160L287 176Z" stroke="white" stroke-width="1.51"/>
+<path d="M385 45L287 176L525 160L385 45Z" stroke="white" stroke-width="1.51"/>
+<path opacity="0.3" d="M203 -28L287 176L385 45L203 -28Z" stroke="white" stroke-width="1.51"/>
+<path d="M97 166L201 333L247 302L97 166Z" stroke="white" stroke-width="1.51"/>
+<path d="M97 166L247 302L287 176L97 166Z" stroke="white" stroke-width="1.51"/>
+<path d="M1583 79L1592 17L1431 27L1583 79Z" stroke="white" stroke-width="1.51"/>
+<path d="M203 -28L97 166L287 176L203 -28Z" stroke="white" stroke-width="1.51"/>
+<path d="M97 166L43 208L201 333L97 166Z" stroke="white" stroke-width="1.51"/>
+<path d="M-35 111L43 208L97 166L-35 111Z" stroke="white" stroke-width="1.51"/>
+<path d="M1592 17L1602 -145L1431 27L1592 17Z" stroke="white" stroke-width="1.51"/>
+<path d="M203 -28L68 -4L97 166L203 -28Z" stroke="white" stroke-width="1.51"/>
+<path d="M1592 17L1700 19L1602 -145L1592 17Z" stroke="white" stroke-width="1.51"/>
+<path d="M1583 79L1693 88L1592 17L1583 79Z" stroke="white" stroke-width="1.51"/>
+<path d="M1753 199L1693 88L1529 231L1753 199Z" stroke="white" stroke-width="1.51"/>
+<path d="M1693 88L1700 19L1592 17L1693 88Z" stroke="white" stroke-width="1.51"/>
+<path d="M68 -4L-35 111L97 166L68 -4Z" stroke="white" stroke-width="1.51"/>
+<path d="M1693 88L1782 148L1700 19L1693 88Z" stroke="white" stroke-width="1.51"/>
+<path d="M1753 199L1782 148L1693 88L1753 199Z" stroke="white" stroke-width="1.51"/>
+<path d="M1855 10L1683 -169L1700 19L1855 10Z" stroke="white" stroke-width="1.51"/>
+<path d="M1700 19L1683 -169L1602 -145L1700 19Z" stroke="white" stroke-width="1.51"/>
+<path d="M1855 10L2005 111L1893 0L1855 10Z" stroke="white" stroke-width="1.51"/>
+<path d="M1768 225L1782 148L1753 199L1768 225Z" stroke="white" stroke-width="1.51"/>
+<path d="M-35 111L-55 292L43 208L-35 111Z" stroke="white" stroke-width="1.51"/>
+<path d="M1782 148L1855 10L1700 19L1782 148Z" stroke="white" stroke-width="1.51"/>
+<path d="M1959 236L1782 148L1768 225L1959 236Z" stroke="white" stroke-width="1.51"/>
+<path d="M2005 111L1855 10L1782 148L2005 111Z" stroke="white" stroke-width="1.51"/>
+<path d="M1900 -107L1683 -169L1855 10L1900 -107Z" stroke="white" stroke-width="1.51"/>
+<path d="M1893 0L1900 -107L1855 10L1893 0Z" stroke="white" stroke-width="1.51"/>
+<path d="M1959 236L2005 111L1782 148L1959 236Z" stroke="white" stroke-width="1.51"/>
+</g>
+</g>
+</svg>

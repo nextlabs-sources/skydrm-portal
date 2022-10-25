@@ -1,0 +1,225 @@
+.section-panel {
+    background-image: url("/assets/img/skydrm/home2_bg.svg");
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: cover;
+    /* background-position:top; */
+    background-color: #36424a;
+    font-family: Lato;
+    font-style: normal;
+    color: #ffffff;
+    max-width: 100%;
+}
+
+.button.is-outlined.primary {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.content-panel {
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+}
+
+.sub-header {
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: normal;
+
+    color: #ffffff;
+}
+
+.content-2 {
+    padding: 0 1em;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: normal;
+    text-align: center;
+}
+
+.signup-label {
+    font-weight: normal;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    color: #bed600;
+}
+
+.login-label {
+    font-weight: normal;
+    font-size: 0.8em;
+    color: white;
+}
+
+.login-label:hover {
+    text-decoration: underline;
+}
+
+.icon-padding {
+    margin-left: 0.6em;
+}
+
+.hide {
+    display: none !important;
+}
+
+.vertical-divider {
+    margin: 0 0.1em 0 0.5em;
+    width: 0.5em;
+    border-left: 0.1em solid #000;
+    height: 3.5em;
+    border-color: white;
+}
+
+.columns {
+    max-width: 83.33333%;
+    margin: 0 auto;
+}
+
+.column.tab {
+    text-align: center;
+
+    i {
+        font-size: 2rem;
+    }
+
+    a {
+        display: block;
+        text-transform: uppercase;
+    }
+}
+
+.custom {
+    text-align: center;
+    padding: 0.2rem;
+    width: 33.3%;
+    color: white;
+    cursor: pointer;
+
+    .img {
+        width: 100%;
+        object-fit: none;
+        height: 100%;
+        position: relative;
+        background-color: var(--color-primary);
+        background-size: cover;
+
+        i {
+            font-size: 3rem;
+        }
+
+        .i-name {
+            padding: 1rem;
+            height: 100%;
+        }
+    }
+
+    .name,
+    .name-mock {
+        font-weight: 700;
+        line-height: 1.5625rem;
+        letter-spacing: 0;
+        padding-top: 1rem;
+        opacity: 0;
+    }
+
+    .name-mock {
+        position: absolute;
+        bottom: 1rem;
+        opacity: 1;
+        left: 1rem;
+        right: 1rem;
+    }
+
+    .desc {
+        font-weight: 400;
+        line-height: 1.5625rem;
+        letter-spacing: 0;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        opacity: 0;
+    }
+
+    .link {
+        opacity: 0;
+    }
+}
+
+.custom .img:hover {
+    color: white;
+
+    .i-name {
+        position: relative;
+        background-color: black;
+    }
+
+    .name-mock {
+        display: none;
+    }
+
+    .desc,
+    .name,
+    .link {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .custom:not(.is-desktop) {
+        width: initial;
+    }
+
+    .columns{
+        max-width: initial;
+    }
+}
+
+.btn-white-hollow {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+    padding: 9pt 22px 13px;
+    min-width: 81pt;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: .2px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 24px;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+    white-space: nowrap;
+    background-image: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+.btn:not(.btn-borderless).btn-white-hollow:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: var(--color-primary);;
+}
+
+@media screen and (min-width: 769px){
+    .modal-card, .modal-content {
+        width: 70%;
+    }
+}

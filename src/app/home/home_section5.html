@@ -1,0 +1,91 @@
+<div id="download" fxLayout="row" fxLayoutAlign="center" class="section-panel">
+
+    <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="1em">
+        <div fxLayout="row" fxLayoutAlign="center">
+            <span class="sub-header">Download</span>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="center">
+            <div fxLayout="column" fxLayoutAlign="center center" fxFlex="80vw">
+              <span class="content-1">Access SkyDRM across platforms to view documents online or offline.</span>
+            </div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="center" fxHide.lt-sm >
+          <div fxLayout="column" fxFlex="80vw" fxLayoutAlign="center">
+              <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="2em">
+                <div class="img-tile">
+                  <a routerLink="/win-download">
+                    <img class="icon-img" alt="Windows" src="assets/img/skydrm/windows.svg" />
+                  </a>
+                </div>          
+                <!--
+                <div fxLayout="column" fxLayoutAlign="center">
+                  <span class="vertical-divider"></span>
+                </div>
+                <div class="img-tile">
+                  <a href="#" (click)="downloadAndroid()" target="_target">
+                    <img class="icon-img" alt="Android" src="assets/img/skydrm/google_play.svg" />
+                  </a>
+                </div>
+              -->
+                
+                <div fxLayout="column" fxLayoutAlign="center">
+                  <span class="vertical-divider"></span>
+                </div>            
+
+              <!--
+                <div class="img-tile">
+                  <a [href]="downloadMacURL">
+                    <img class="icon-img" src="assets/img/skydrm/macos.svg" />
+                  </a>
+                </div>
+                
+                <div fxLayout="column" fxLayoutAlign="center">
+                  <span class="vertical-divider"></span>
+                </div>
+              -->
+              
+                <div class="img-tile">
+                  <a href="#" (click)="downloadIOS()">
+                    <img class="icon-img" alt="IOS" src="assets/img/skydrm/app_store.svg" />
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center" fxHide fxShow.lt-sm >
+          <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="1.5em">
+            <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="2em">
+              <div class="m-img-tile">
+                <a routerLink="/win-download">
+                  <img class="m-icon-img" alt="Windows" src="assets/img/skydrm/windows.svg" />
+                </a>
+              </div>
+              <!--
+              <div class="m-img-tile">
+                <a href="#" (click)="downloadAndroid()" target="_target">
+                  <img class="m-icon-img" alt="Android" src="assets/img/skydrm/google_play.svg" />
+                </a>
+              </div>
+            -->
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="2em">
+            <!--
+              <div class="m-img-tile">
+                <a [href]="downloadMacURL">
+                  <img class="m-icon-img-2" src="assets/img/skydrm/macos.svg" />
+                </a>
+              </div>
+            -->
+            <div class="m-img-tile">
+                <a href="#" (click)="downloadIOS()">
+                  <img class="m-icon-img" alt="IOS" src="assets/img/skydrm/app_store.svg" />
+                </a>
+              </div>
+                  
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+#win-download-panel {
+    color: #36424A;
+    background: #F1F2F2;  
+}
+
+.header-panel {
+    padding: 3em 0 2em 0;
+}
+
+::ng-deep .mat-form-field{ 
+    width:25em !important; 
+}
+
+.button-panel {
+    padding: 2em 0 15em 0;
+}
+
+.download-file-1 {
+    padding-top: 0;
+}
+
+.download-file-2 {
+    padding-top: 1em;
+}
+
+.download-zip-file {
+    padding-top: 1em;
+}
+
+.button-item {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+    background: #39974A;
+    border-color: #39974A;
+    padding: 0.3em 1.5em 0.3em 1.5em;
+  
+}
+
+.instruction-panel {
+    line-height: 1.5em;
+    padding-left: 5em;
+}

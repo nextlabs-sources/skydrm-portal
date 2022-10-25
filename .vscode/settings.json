@@ -1,0 +1,14 @@
+{
+    "git.ignoreLimitWarning": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "beautify.language": {
+        "html": ["htm", "html"],
+        "css": ["css", "scss"],
+        "js": ["json"]
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.markdownlint": true
+    }
+}

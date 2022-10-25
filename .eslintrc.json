@@ -1,0 +1,48 @@
+{
+    "root": true,
+    "ignorePatterns": ["dist", "coverage"],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "overrides": [
+        {
+            "files": ["*.ts"],
+            "parserOptions": {
+                "project": ["tsconfig.json"],
+                "createDefaultProgram": true
+            },
+            "extends": [
+                "plugin:@angular-eslint/recommended",
+                "eslint:recommended",
+                "plugin:@typescript-eslint/recommended",
+                "plugin:prettier/recommended"
+            ],
+            "parser": "@typescript-eslint/parser",
+            "plugins": [
+                "@typescript-eslint"
+            ],
+            "rules": {
+                "indent": [
+                    "error",
+                    4
+                ],
+                "semi": [
+                    "error",
+                    "always"
+                ]
+            }
+        },
+        {
+            "files": ["*.html"],
+            "extends": ["plugin:@angular-eslint/template/recommended", "plugin:prettier/recommended"],
+            "rules": {}
+        },
+        {
+            "files": ["*.spec.ts"],
+            "extends": ["eslint:recommended"],
+            "rules": {
+                "no-undef": "off"
+            }
+        }
+    ]
+}

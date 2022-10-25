@@ -1,0 +1,74 @@
+.section-panel {
+  background-image: url("/assets/img/skydrm/home2_bg.svg");
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-size: cover;
+  /* background-position:top; */
+  background-color: #36424A;
+  font-family: Lato;
+  font-style: normal;
+  color: #FFFFFF;
+  max-width: 100%;
+}
+
+.content-panel {
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+}
+
+.sub-header {
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: normal;
+
+    color: #FFFFFF;
+}
+
+.signup-label {
+  font-weight: normal;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  color: #BED600;
+}
+
+.login-label {
+  font-weight: normal;
+  font-size: 0.8em;
+  color: white;
+
+}
+
+.login-label:hover {
+  text-decoration: underline;
+}
+
+.icon-padding {
+  margin-left: 0.6em;
+}
+
+.free-trial-button {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: normal;
+  text-align: center;
+  color: #39974A;
+  background: #FFFFFF;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  cursor: pointer;
+}
+
+.free-trial-button:hover {
+    text-decoration: underline;
+}
+
+.hide {
+    display: none !important;
+}
+
+.vertical-divider {
+  margin: 0 0.1em 0 0.5em;
+  width: 0.5em;
+  border-left: 0.1em solid #000;
+  height: 3.5em;
+  border-color: white;
+}

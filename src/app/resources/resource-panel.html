@@ -1,0 +1,119 @@
+<div id="resources" fxLayout="column" fxLayoutAlign="start" fxLayoutGap="2em">
+    <div fxLayout="row" fxLayoutAlign="center" class="section-panel">
+
+        <div class="content-panel">
+            <div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="1em" fxFlex="80vw">
+                <div fxLayout="row" fxLayoutAlign="center">
+                    <span class="sub-header">Resources</span>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="center">
+                    <p class="content-1">NextLabs offers several resources to help you learn more about SkyDRM.
+                    Please click on one of the below to see what we’ve got.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <ng-container *ngIf="!showVideo">
+        <!-- Desktop/Laptop -->
+        <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="2em" fxHide.lt-md>
+            <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="2em">
+                <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="1em" >
+                    <div class="custom-box" *ngFor="let item of white_paper_list">
+                        <div class="img" [style.backgroundImage]="item.backgroundImage" (click)="openLink(item)">
+                            <div class="i-name">
+                                <div class="name">{{item.title}}</div>
+                                    <div class="name-mock">{{item.title}}</div>
+                                    <div class="desc">{{item.desc}}</div>
+                                    <div class="link" *ngIf="item.link">
+                                        <span class="btn btn-white-hollow">Read White Paper</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-box" *ngFor="let item of datasheet_list">
+                        <div class="img" [style.backgroundImage]="item.backgroundImage" (click)="openLink(item)">
+                            <div class="i-name">
+                                <div class="name">{{item.title}}</div>
+                                    <div class="name-mock">{{item.title}}</div>
+                                    <div class="desc">{{item.desc}}</div>
+                                    <div class="link" *ngIf="item.link">
+                                        <span class="btn btn-white-hollow">Read Datasheet</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-box">
+                        <div class="img" [style.backgroundImage]="webinar_background" (click)="openVideo()">
+                            <div class="i-name">
+                                <div class="name">{{webinar_title}}</div>
+                                <div class="name-mock">{{webinar_title}}</div>
+                                <div class="desc">{{webinar_desc}}</div>
+                                <div class="link">
+                                    <span class="btn btn-white-hollow">Watch Video</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tablet/Mobile -->
+        <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="2em" fxHide.gt-sm >
+            <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="1em" fxFlex="90vw">
+                <div class="custom-box" *ngFor="let item of white_paper_list">
+                    <div class="img" [style.backgroundImage]="item.backgroundImage" (click)="openLink(item)">
+                        <div class="i-name">
+                            <div class="name">{{item.title}}</div>
+                            <div class="name-mock">{{item.title}}</div>
+                            <div class="desc">{{item.desc}}</div>
+                            <div class="link" *ngIf="item.link">
+                                <span class="btn btn-white-hollow">Read White Paper</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-box" *ngFor="let item of datasheet_list">
+                    <div class="img" [style.backgroundImage]="item.backgroundImage" (click)="openLink(item)">
+                        <div class="i-name">
+                            <div class="name">{{item.title}}</div>
+                            <div class="name-mock">{{item.title}}</div>
+                            <div class="desc">{{item.desc}}</div>
+                            <div class="link" *ngIf="item.link">
+                                <span class="btn btn-white-hollow">Read Datasheet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-box">
+                    <div class="img" [style.backgroundImage]="webinar_background" (click)="openVideo()">
+                        <div class="i-name">
+                            <div class="name">{{webinar_title}}</div>
+                            <div class="name-mock">{{webinar_title}}</div>
+                            <div class="desc">{{webinar_desc}}</div>
+                            <div class="link">
+                                <span class="btn btn-white-hollow">Watch Video</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+    
+    <ng-container *ngIf="showVideo">
+        <div class="columns">
+            <div class="column is-offset-1 is-10">
+                <button type="button" class="button is-black is-small" (click)="closeVideo()">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i><span class="but-panel">Back</span>
+                </button>
+            </div>
+        </div>
+        <video-resources></video-resources>
+
+    </ng-container>
+</div>

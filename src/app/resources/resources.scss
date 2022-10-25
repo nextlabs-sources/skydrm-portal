@@ -1,0 +1,128 @@
+.section-panel {
+    background-image: url("/assets/img/skydrm/home2_bg.svg");
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: cover;
+    /* background-position:top; */
+    background-color: #36424a;
+    font-family: Lato;
+    font-style: normal;
+    color: #ffffff;
+    max-width: 100%;
+}
+
+.button.is-outlined.primary {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.content-panel {
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+}
+
+.sub-header {
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: normal;
+
+    color: #ffffff;
+}
+
+.content-2 {
+    padding: 0 1em;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: normal;
+    text-align: center;
+}
+
+.signup-label {
+    font-weight: normal;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    color: #bed600;
+}
+
+.login-label {
+    font-weight: normal;
+    font-size: 0.8em;
+    color: white;
+}
+
+.login-label:hover {
+    text-decoration: underline;
+}
+
+.icon-padding {
+    margin-left: 0.6em;
+}
+
+.hide {
+    display: none !important;
+}
+
+.vertical-divider {
+    margin: 0 0.1em 0 0.5em;
+    width: 0.5em;
+    border-left: 0.1em solid #000;
+    height: 3.5em;
+    border-color: white;
+}
+
+.column.custom {
+    text-align: center;
+    max-width: 20rem;
+
+    .img {
+        background: #f6f6f6;
+        width: 100%;
+        object-fit: none;
+        padding-bottom: 100%;
+        position: relative;
+        transition: all 0.35s ease-out;
+        outline: none;
+        cursor: pointer;
+
+        i {
+            font-size: 3rem;
+            color: var(--color-primary);
+            padding-bottom: 1rem;
+        }
+
+        .i-name {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            width: 75%;
+            max-height: 75%;
+        }
+    }
+
+    .img:hover {
+        box-shadow: 0 3px 15px rgb(0 0 0 / 40%);
+    }
+
+    .name {
+        font-weight: 700;
+        line-height: 1.5625rem;
+        letter-spacing: 0;
+    }
+
+    .desc {
+        font-weight: 400;
+        line-height: 1.5625rem;
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .column.custom {
+        max-width: initial;
+    }
+
+    .column:not(.is-desktop) .img {
+        padding-bottom: 50%;
+    }
+}

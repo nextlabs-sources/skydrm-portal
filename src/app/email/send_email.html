@@ -1,0 +1,134 @@
+<div fxLayout="column" fxLayoutAlign="start" class="form-panel" [fxShow]="showQuery">
+      <form [formGroup]="emailForm" (ngSubmit)="sendEmail(emailForm.value)">
+
+        <!-- Web -->
+        <div fxLayout="row" fxLayoutAlign="start" fxHide.lt-sm >
+          <div fxLayout="column" fxLayoutAlign="start">
+            <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="1em">
+              <mat-form-field floatLabel="always">
+                <mat-label>Name</mat-label>
+                <input matInput type="text" maxlength="100" placeholder=" " formControlName="name" required>
+                <mat-error *ngFor="let validation of email_validation_messages.name">
+                  <mat-error class="error-message" *ngIf="emailForm.get('name').hasError(validation.type) && (emailForm.get('name').dirty || emailForm.get('name').touched)">{{validation.message}}</mat-error>
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field floatLabel="always">
+                <mat-label>Email</mat-label>
+                <input matInput type="text" maxlength="100" placeholder=" " formControlName="email" required>
+                <mat-error *ngFor="let validation of email_validation_messages.email">
+                  <mat-error class="error-message" *ngIf="emailForm.get('email').hasError(validation.type) && (emailForm.get('email').dirty || emailForm.get('email').touched)">{{validation.message}}</mat-error>
+                </mat-error>
+              </mat-form-field>
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="1em">
+              <mat-form-field floatLabel="always">
+                <mat-label>Phone No.</mat-label>
+                <input matInput type="text" maxlength="20" placeholder=" " formControlName="phone" required>
+                <mat-error *ngFor="let validation of email_validation_messages.phone">
+                  <mat-error class="error-message" *ngIf="emailForm.get('phone').hasError(validation.type) && (emailForm.get('phone').dirty || emailForm.get('phone').touched)">{{validation.message}}</mat-error>
+                </mat-error>
+              </mat-form-field>
+
+              <mat-form-field floatLabel="always">
+                <mat-label>Company Name</mat-label>
+                <input matInput type="text" maxlength="100" placeholder=" " formControlName="company" required>
+                <mat-error *ngFor="let validation of email_validation_messages.company">
+                  <mat-error class="error-message" *ngIf="emailForm.get('company').hasError(validation.type) && (emailForm.get('company').dirty || emailForm.get('company').touched)">{{validation.message}}</mat-error>
+                </mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile -->
+        <div fxLayout="row" fxLayoutAlign="start" fxHide.gt-xs>
+          <div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="1em">
+            <mat-form-field floatLabel="always">
+              <mat-label>Name</mat-label>
+              <input matInput type="text" maxlength="100" placeholder=" " formControlName="name" required>
+              <mat-error *ngFor="let validation of email_validation_messages.name">
+                <mat-error class="error-message" *ngIf="emailForm.get('name').hasError(validation.type) && (emailForm.get('name').dirty || emailForm.get('name').touched)">{{validation.message}}</mat-error>
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field floatLabel="always">
+              <mat-label>Email</mat-label>
+              <input matInput type="text" maxlength="100" placeholder=" " formControlName="email" required>
+              <mat-error *ngFor="let validation of email_validation_messages.email">
+                <mat-error class="error-message" *ngIf="emailForm.get('email').hasError(validation.type) && (emailForm.get('email').dirty || emailForm.get('email').touched)">{{validation.message}}</mat-error>
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field floatLabel="always">
+              <mat-label>Phone No.</mat-label>
+              <input matInput type="text" maxlength="20" placeholder=" " formControlName="phone">
+              <!--
+              <mat-error *ngFor="let validation of email_validation_messages.phone">
+                <mat-error class="error-message" *ngIf="emailForm.get('phone').hasError(validation.type) && (emailForm.get('phone').dirty || emailForm.get('phone').touched)">{{validation.message}}</mat-error>
+              </mat-error>
+            -->
+            </mat-form-field>
+
+            <mat-form-field floatLabel="always">
+              <mat-label>Company Name</mat-label>
+              <input matInput type="text" maxlength="100" placeholder=" " formControlName="company" required>
+              <mat-error *ngFor="let validation of email_validation_messages.company">
+                <mat-error class="error-message" *ngIf="emailForm.get('company').hasError(validation.type) && (emailForm.get('company').dirty || emailForm.get('company').touched)">{{validation.message}}</mat-error>
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="start">
+            <mat-form-field appearance="outline" floatLabel="always">
+              <mat-label>Message</mat-label>
+              <textarea matInput maxlength="3000" placeholder="Please type your message here" formControlName="message" required></textarea>
+              <mat-error *ngFor="let validation of email_validation_messages.message">
+                <mat-error class="error-message" *ngIf="emailForm.get('message').hasError(validation.type) && (emailForm.get('message').dirty || emailForm.get('message').touched)">{{validation.message}}</mat-error>
+              </mat-error>
+            </mat-form-field>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="start">
+          <ngx-recaptcha2 #captchaElem2
+                          [siteKey]="siteKey"
+                          (reset)="handleReset()"
+                          (expire)="handleExpire()"
+                          (error)="handleError()"
+                          (load)="handleLoad()"
+                          (success)="handleSuccess($event)"
+                          [useGlobalDomain]="false"
+                          size="normal"
+                          hl="en"
+                          theme="light"
+                          type="image"
+                          formControlName="recaptcha2">
+          </ngx-recaptcha2>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="start">
+          <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="1em">
+            <div fxFlex class="button-panel">
+              <button type="submit" mat-raised-button class="button-item" [disabled]="disabled">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+</div>
+
+<div fxLayout="column" fxLayoutAlign="start" class="form-panel" [fxShow]="showAck">
+  <div fxLayout="row" fxLayoutAlign="center">
+    <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="1em" fxFlex="80vw" fxFlex.gt-sm="30vm">
+      <span class="ack-panel">Your query has successfully been received. Our support team will contact you shortly</span>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center">
+    <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="1em" fxFlex="80vw" fxFlex.gt-sm="30vm">
+      <div fxFlex class="button-panel">
+        <button mat-raised-button class="button-item" (click)="closeAck()">Done</button>
+      </div>
+    </div>
+  </div>
+</div>

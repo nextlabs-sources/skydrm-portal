@@ -1,0 +1,58 @@
+/*
+.form-container > * {
+    width: 100%;
+    font-family: Lato;
+    font-style: normal;
+}
+*/
+
+::ng-deep .mat-form-field{ 
+    width:100% !important; 
+}
+
+.sub-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: normal;
+}
+
+/*
+.field-container {
+    display: flex;
+    width: 100%;
+    font-weight: normal;
+    padding-bottom: 1em;
+}
+
+.field-container-2 {
+    display: flex;
+    flex-grow: 2;
+    flex: 1 0 auto;
+    font-weight: normal;
+    padding-bottom: 1em;
+}
+*/
+
+.content-2 {
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.button-panel {
+    padding-top: 3em;
+}
+
+.button-item {
+    background: black;
+    color: white;
+}
+
+.ack-panel {
+  padding: 3em 1em 3em 1em;
+}
+
+.form-panel {
+  padding-top: 2em;
+  min-height: 60vh;
+}

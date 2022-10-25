@@ -1,0 +1,103 @@
+<div id="section2" fxLayout="row" fxLayoutAlign="center" class="section-panel">
+
+    <div class="content-panel">
+        <div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="1em">
+            <div fxLayout="row" fxLayoutAlign="center">
+                <span class="sub-header">{{selectedTab}}</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="section" style="background-color: #e5e5e5;">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column tab">
+                <div class="img">
+                    <div class="i-name">
+                        <i class="far fa-copy"></i>
+                        <!--
+                        <a [routerLink]='["/resources/whitePapers"]'>White Papers</a>
+                        -->
+                    </div>
+                </div>
+            </div>
+            <div class="column tab">
+                <div class="img">
+                    <div class="i-name">
+                        <i class="fas fa-desktop"></i>
+                        <!--
+                        <a [routerLink]='["/resources/webinars"]'>Webinars</a>
+                        -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="column custom">
+                <div class="img">
+                    <div class="i-name">
+                        <i class="fas fa-video"></i>
+                        <div class="name">Data Masking Tutorial</div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="column tab">
+                <div class="img">
+                    <div class="i-name">
+                        <i class="fas fa-copy"></i>
+                        <!--
+                        <a [routerLink]='["/resources/datasheets"]'>Datasheet</a>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section">
+    <div class="container">
+
+        <div class="columns">
+            <div class="custom" *ngFor="let item of list">
+                <div class="img" [style.backgroundImage]="item.thumbnail || item.backgroundImage" (click)="item.thumbnail ? openDialog(item):openLink(item)">
+                    <div class="i-name">
+                        <!-- <i class="far fa-copy"></i> -->
+                        <!--
+                        <div class="name">{{item.title}}</div>
+                        <div class="name-mock">{{item.title}}</div>
+                        <div class="desc">{{item.desc}}</div>
+                        <div class="link" *ngIf="item.link">
+                            <span class="btn btn-white-hollow">Read more</span>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+<div class="modal" [ngClass]="showDialog">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title"></p>
+            <button class="delete" aria-label="close" (click)="closeDialog()"></button>
+        </header>
+
+        <section class="modal-card-body">
+            <figure class="image is-16by9">
+                <iframe *ngIf="iframeSrc" class="has-ratio" width="100%" height="auto" [src]="iframeSrc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </figure>
+        </section>
+
+    </div>
+</div>
+-->

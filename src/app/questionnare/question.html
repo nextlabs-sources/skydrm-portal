@@ -1,0 +1,60 @@
+
+<!--
+<div class="section-panel">
+</div>
+-->
+    <form [formGroup]="questionForm" (ngSubmit)="send(questionForm.value)">
+        <div class="columns is-centered questionaire-panel">
+            <div class="column is-7">
+                <div class="content">
+                    <h1 class="header-label">Questionaire: Business Applications</h1>
+                    <p class="sub-header-label">Help us understand your business applications so that we can customize SkyDRM to cater to
+                        your needs.
+                    </p>
+
+                    <div fxLayout="row" fxLayoutAlign="center" class="success-panel" *ngIf="isSuccess">
+                        <span>Your answer has successfully been submitted</span>
+                    </div>
+                    <div fxLayout="row" fxLayoutAlign="center" class="error-panel" *ngIf="isError">
+                        <span>Something has gone wrong during form submission. Please try again.</span>
+                    </div>
+
+                    <div class="field">
+                        <label class="label question-label">What type of applications are you planning to integrate with this service?</label>
+                        <div class="control">
+                            <textarea class="textarea answer-label" maxlength="3000" placeholder="" formControlName="answer1" required></textarea>
+                        </div>
+                        <mat-error *ngFor="let validation of validation_messages.answer1">
+                            <mat-error class="error-message" *ngIf="answer1.hasError(validation.type) && (answer1.dirty || answer1.touched)">{{validation.message}}</mat-error>
+                        </mat-error>
+                    </div>
+
+                    <div class="field">
+                        <label class="label  question-label">What programming languages are these applications written in?</label>
+                        <div class="control">
+                            <textarea class="textarea answer-label" maxlength="3000" placeholder="" formControlName="answer2" required></textarea>
+                        </div>
+                        <mat-error *ngFor="let validation of validation_messages.answer2">
+                            <mat-error class="error-message" *ngIf="answer2.hasError(validation.type) && (answer2.dirty || answer2.touched)">{{validation.message}}</mat-error>
+                        </mat-error>
+                    </div>
+
+                    <div class="field">
+                        <label class="label question-label">Anything else we should know or can help you to make the trial successful?</label>
+                        <div class="control">
+                            <textarea class="textarea answer-label" maxlength="3000" placeholder="" formControlName="answer3" required></textarea>
+                        </div>
+                        <mat-error *ngFor="let validation of validation_messages.answer3">
+                            <mat-error class="error-message" *ngIf="answer3.hasError(validation.type) && (answer3.dirty || answer3.touched)">{{validation.message}}</mat-error>
+                        </mat-error>
+                    </div>
+
+                    <div fxLayout="row" fxLayoutAlign="center">
+                        <button type="submit" class="button is-black button-item">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+

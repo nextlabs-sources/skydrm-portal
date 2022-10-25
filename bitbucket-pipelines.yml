@@ -1,0 +1,54 @@
+image: node:16
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Build app and deploy to staging.skydrm.com
+          caches:
+            - node
+          script: # The script below will build the application.
+            - npm install
+            - npm install -g @angular/cli
+            - ng build --configuration production
+            - ls -ltr
+            - cd dist
+            - export DISTDIR=$(pwd)
+            - ls -ltr ${DISTDIR}/skydrm-portal
+            - pipe: atlassian/aws-s3-deploy:0.3.2
+              variables:
+                AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+                AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+                AWS_DEFAULT_REGION: "us-east-1"
+                ACL: "public-read"
+                S3_BUCKET: "staging.skydrm.com"
+                LOCAL_PATH: ${DISTDIR}/skydrm-portal
+
+            - pipe: atlassian/email-notify:0.3.4
+              variables:
+                USERNAME: "admin@skydrm.com"
+                PASSWORD: ${EMAIL_LOGIN_PASSWORD}
+                FROM: "admin@skydrm.com"
+                TO: "kavashgar.manimarpan@nextlabs.com,david.lim@nextlabs.com"
+                PORT: 587
+                HOST: "smtp.gmail.com"
+                SUBJECT: "staging.skydrm.com has been updated - Please Review and Approve"
+      - step:
+          trigger: manual
+          name: "Deploy to Production"
+          script:
+            - npm install
+            - npm install -g @angular/cli
+            - ng build --configuration production
+            - ls -ltr
+            - cd dist
+            - export DISTDIR=$(pwd)
+            - ls -ltr ${DISTDIR}/skydrm-portal
+            - echo "Got Green signal to push to production - Deploying to skydrm.com"
+            - pipe: atlassian/aws-s3-deploy:0.3.2
+              variables:
+                AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+                AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+                AWS_DEFAULT_REGION: "us-east-1"
+                ACL: "public-read"
+                S3_BUCKET: "www.skydrm.com"
+                LOCAL_PATH: ${DISTDIR}/skydrm-portal

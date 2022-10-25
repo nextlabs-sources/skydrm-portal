@@ -1,0 +1,247 @@
+a {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+mat-toolbar {
+  position: fixed;
+}
+
+.mat-divider {
+  border-right-color: black !important;
+}
+
+#main-header {
+  width: 100%;
+  height: 3em;
+  background: white;
+}
+
+.nextlabs-logo {
+  padding-left: 2em;
+  padding-top: 0.9em;
+  padding-right: 0.5em;
+  vertical-align: middle;
+  height: auto;
+}
+
+.logo-panel {
+  //display: block;
+  width: 7em;
+}
+
+.cloudaz-panel {
+  //display: block;
+  width: 6em;
+}
+
+.img-logo {
+  padding: 0.5em 0.8em 0 1em;
+}
+
+.img-skydrm {
+  padding: 0.5em 0.5em 0 0.5em;
+}
+
+/*
+ * Overwrite the material toobar colors
+*/
+.mat-toolbar.mat-primary {
+  background: white;
+  color: black;
+}
+
+.navigation-items {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.navigation-items a:hover {
+  text-decoration: underline;
+}
+
+.navigation-items a:active {
+  text-decoration: underline;
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.cloudaz-signup-panel {
+  margin-top: 0.5em;
+  margin-right: 2em;
+}
+
+.skydrm-login-button {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.8em;
+  color: #fff;
+  background: #39974A;
+  border-color: #39974A;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  /*
+  background-color: rgba(236,99,75,1);
+  border-color: rgba(239, 63, 36, 1);
+  */
+  padding: 0.3em 1.5em 0.3em 1.5em;
+  margin-left: 1em;
+}
+
+.skydrm-login-button-2 {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.8em;
+  color: #fff;
+  background: #39974A;
+  border-color: #39974A;
+  /*
+  background-color: rgba(236,99,75,1);
+  border-color: rgba(239, 63, 36, 1);
+  */
+  padding: 0.3em 1.5em 0.3em 1.5em;
+  margin-left: 1em;
+}
+
+.skydrm-register-button {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.8em;
+  color: #fff;
+  background: #39974A;
+  border-color: #39974A;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  /*
+  background-color: rgba(236,99,75,1);
+  border-color: rgba(239, 63, 36, 1);
+  */
+  padding: 0.3em 1.5em 0.3em 1.5em;
+  margin-left: 1em;
+}
+
+.menu-panel {
+  margin-left: 2em;
+}
+
+.menu-item {
+  padding: 1em;
+  text-decoration: none;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+  line-height: normal;
+  color: #36424A;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  background-color: lightgray;
+}
+
+#main-content {
+  margin-top: 4em;
+
+  /*
+  width: 100%;
+  min-height: 10em;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  */
+}
+
+#main-footer {
+  padding: 3em 0 3em 0;
+  background-color: #39974A;
+  text-align: center;
+}
+
+.footer-padding {
+  margin-right: 2.5em;
+}
+
+.footer-icon-padding {
+  margin-left: 0.6em;
+}
+
+.footer-privacy {
+  margin-top: 1em;
+  text-align: center;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+
+.footer-vertical-divider {
+  margin: 0 0.5em 0 0.5em;
+  width: 0.5em;
+  border-left: 0.1em solid #000;
+  height: 1.5em;
+  border-color: white;
+}
+
+#main-footer-bar {
+  background-color: #36424A;
+  text-align: center;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 0.8em;
+  color: #FFFFFF;
+}
+
+.cookie-consent-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  //height: 10em;
+  z-index: 10;
+}
+
+.section-bar {
+  background-color: #464646;
+  color: white;
+  margin: 0 1em 0 0;
+
+}
+
+.skydrm-consent-button {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1em;
+  color: #fff;
+  background: #39974A;
+  border-color: #39974A;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  padding: 0.3em 1.5em 0.3em 1.5em;
+  margin-left: 1em;
+}
+
+.consent-link {
+  text-decoration: underline;
+}

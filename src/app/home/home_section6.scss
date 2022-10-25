@@ -1,0 +1,84 @@
+.section-panel {
+  font-family: Lato;
+  font-style: normal;
+  color: #36424A;
+  //background: #F1F2F2;
+  background: #FFFFFF;
+  padding-top: 5em;
+  padding-bottom: 3em;
+  width: 100%;
+}
+
+.sub-header {
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: normal;
+
+    color: #36424A;
+}
+
+.content-1 {
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 2em;
+    color: #36424A;
+
+    padding-bottom: 1em;
+}
+
+.vertical-line {
+    width: 1em;
+    margin-left: 1em;
+    height: 28em;
+
+    border-left: 1px solid #D1D4D3;
+}
+
+.sub-header-2 {
+    font-weight: bold;
+    font-size: 1.6em;
+    line-height: normal;
+}
+
+.content-2 {
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.icon-img {
+    width: 15vw;
+    height: 15vh;
+ }
+
+.list-panel {
+    width: 500px;
+}
+
+/*
+* Mobile
+*/
+.m-icon-img {
+    max-width: 3em;
+}
+
+.m-sub-header-2 {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: normal;
+}
+
+.m-content-2 {
+    font-weight: normal;
+    font-size: 1.0em;
+    line-height: normal;
+
+}
+
+.m-call-panel {
+  padding-bottom: 1em;
+}
+
+.m-email-panel {
+  padding-top: 1em;
+}

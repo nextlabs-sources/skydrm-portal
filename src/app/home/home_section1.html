@@ -1,0 +1,235 @@
+<div id="section1" fxLayout="column" fxLayoutAlign="start" class="section-panel">
+
+  <ng-container *ngIf="showAnnouncement">
+    <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="1em">
+      <div fxLayout="column" fxLayoutAlign="start" fxFlex="80vw" fxFlex.gt-sm="50vw">
+        <span class="old-version">
+          SkyDRM is scheduled for upgrade on April 27th, 2020 (PST).
+        </span>
+      </div>
+    </div>
+  </ng-container>
+
+  <!-- Web Layout -->
+  <div fxLayout="row" fxLayoutAlign="center" fxHide.lt-md class="web-panel">
+      
+    <div fxLayout="column" fxLayoutAlign="start">
+
+      <div fxLayout="row wrap" fxLayoutAlign="center">
+        <div fxLayout="column" fxLayoutAlign="center" fxFlex="36vw" fxFlex.gt-lg="23vw" fxLayoutGap.gt-sm="2em">
+          <div fxLayout="row" fxLayoutAlign="start" fxHide.lt-md>
+            <div ngClass.gt-md="sub-header-1" ngClass.md="t2-sub-header-1" ngClass.lt-md="t-sub-header-1">Protect your document, share and monitor it securely anywhere.</div>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="start" fxHide.lt-md>
+            <div ngClass.gt-md="content-1" ngClass.md="t2-content-1" ngClass.lt-md="t-content-1">Keep your documents safe from unauthorized access and control how they can be used.</div>
+          </div>
+
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start" fxFlex="44vw" fxFlex.gt-lg="33vw">
+          <div fxLayout="row" fxLayoutAlign="start">
+              <div fxLayout="column" fxLayoutAlign="center">
+                <img class="img-item" src="assets/img/skydrm/laptop_1.png" />
+              </div>
+          </div>
+        </div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="center">
+        <div fxLayout="column" fxLayoutAlign="start" fxFlex="80vw" fxFlex.gt-lg="56vw">
+          <span class="content-1-1">We help companies achieve the following:</span>
+        </div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="1em">
+        <div fxLayout="column" fxLayoutAlign="start" fxFlex="20vw" fxFlex.gt-lg="13vw">
+          <div fxLayout="row" fxLayoutAlign="center">
+              <div fxLayout="column" fxLayoutAlign="center" class="img-container">
+                <img class="icon-img-1" src="assets/img/skydrm/modernize_it.svg" />
+              </div>
+          </div>
+
+          <div class="horizontal-bar"></div>
+          <span class="sub-header-2">Modernize IT</span>
+          <span class="content-2">Move faster, automate, improve efficiency, and be more agile</span>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start" fxFlex="20vw" fxFlex.gt-lg="13vw">
+          <div fxLayout="row" fxLayoutAlign="center">
+            <div fxLayout="column" fxLayoutAlign="center" class="img-container">
+                  <img class="icon-img-2" src="assets/img/skydrm/customer_expectation.svg" />
+            </div>
+          </div>
+
+          <div class="horizontal-bar"></div>
+          <span class="sub-header-2">Surpass customer expectation</span>
+          <span class="content-2">Prevent wrongful disclosure of customer data and provide secure access to critical business applications</span>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start" fxFlex="20vw" fxFlex.gt-lg="13vw">
+          <div fxLayout="row" fxLayoutAlign="center">
+            <div fxLayout="column" fxLayoutAlign="center" class="img-container">
+              <img class="icon-img-3" src="assets/img/skydrm/competitive_advantage.svg" />
+            </div>
+          </div>
+          <div class="horizontal-bar"></div>
+          <span class="sub-header-2">Extend competitive advantage</span>
+          <span class="content-2">Protect trade secret and intellectual property</span>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start" fxFlex="20vw" fxFlex.gt-lg="13vw">
+          <div fxLayout="row" fxLayoutAlign="center">
+              <div fxLayout="column" fxLayoutAlign="center" class="img-container">
+                  <img class="icon-img-4" src="assets/img/skydrm/prevent_breaches.svg" />
+            </div>
+          </div>
+
+          <div class="horizontal-bar"></div>
+          <span class="sub-header-2">Prevent data breaches</span>
+          <span class="content-2">Close the security gap of perimeter security while allowing user to collaborate effectively</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Tablet/Mobile Layout -->
+  <div fxLayout="row" fxLayoutAlign="center" fxHide.gt-sm>
+    <div fxFlex="94" class="m-panel">
+      <div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="1em">
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <img class="t-img-item" src="assets/img/skydrm/laptop_1.png" />
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="center">
+          <div fxFlex="75">
+            <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="1em">
+              <div fxLayout="row wrap" fxLayoutAlign="center">
+                <div ngClass.xs="m-sub-header-1" ngClass.sm="t-sub-header-1">Protect your document, share and monitor it securely anywhere.</div>
+              </div>
+
+              <div fxLayout="row wrap" fxLayoutAlign="center">
+                <div ngClass.xs="m-content-1" ngClass.sm="t-content-1">Keep your documents safe from unauthorized access and control how they can be used.</div>
+              </div>
+
+              <div fxLayout="row wrap" fxLayoutAlign="center">
+                <div ngClass.xs="m-content-1" ngClass.sm="t-content-1">We help companies achieve the following:</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tablet Layout -->
+        <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="1em" fxHide fxShow.sm>
+          <div fxFlex="40">
+            <div fxLayout="column" fxLayoutAlign="start center">
+              <div fxLayout="row" fxLayoutAlign="center center">
+                <img class="t-icon-img-1" src="assets/img/skydrm/modernize_it.svg" />
+              </div>
+
+              <div class="horizontal-bar"></div>
+              <span class="sub-header-2">Modernize IT</span>
+              <span class="content-2">Move faster, automate, improve efficiency, and be more agile</span>
+            </div>
+          </div>
+          <div fxFlex="40">
+            <div fxLayout="column" fxLayoutAlign="start center">
+              <div fxLayout="row" fxLayoutAlign="center center">
+                <img class="t-icon-img-2" src="assets/img/skydrm/customer_expectation.svg" />
+              </div>
+
+              <div class="horizontal-bar"></div>
+              <span class="sub-header-2">Surpass customer expectation</span>
+              <span class="content-2">Prevent wrongful disclosure of customer data and provide secure access to critical business applications</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Layout -->
+        <div fxLayout="row" fxLayoutAlign="center" fxHide.gt-xs>
+          <div fxFlex="80">
+            <div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="1em">
+              <div fxLayout="row" fxLayoutAlign="center">
+                <img class="t-icon-img-1" src="assets/img/skydrm/modernize_it.svg" />
+              </div>
+
+              <div class="horizontal-bar"></div>
+              <span class="sub-header-2">Modernize IT</span>
+              <span class="content-2">Move faster, automate, improve efficiency, and be more agile</span>
+            </div>
+          </div>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="1em" fxHide.gt-xs>
+          <div fxFlex="80">
+            <div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="1em">
+              <div fxLayout="row" fxLayoutAlign="center">
+                <img class="t-icon-img-2" src="assets/img/skydrm/customer_expectation.svg" />
+              </div>
+
+              <div class="horizontal-bar"></div>
+              <span class="sub-header-2">Surpass customer expectation</span>
+              <span class="content-2">Prevent wrongful disclosure of customer data and provide secure access to critical business applications</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tablet Layout -->
+        <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="1em" fxHide fxShow.sm>
+
+          <div fxFlex="40">
+            <div fxLayout="column" fxLayoutAlign="start center">
+              <div fxLayout="row" fxLayoutAlign="center center">
+                <img class="t-icon-img-3" src="assets/img/skydrm/competitive_advantage.svg" />
+              </div>
+              <div class="horizontal-bar"></div>
+              <span class="sub-header-2">Extend competitive advantage</span>
+              <span class="content-2">Protect trade secret and intellectual property</span>
+            </div>
+          </div>
+
+          <div fxFlex="40">
+            <div fxLayout="column" fxLayoutAlign="start center">
+              <div fxLayout="row" fxLayoutAlign="center center">
+                <img class="t-icon-img-4" src="assets/img/skydrm/prevent_breaches.svg" />
+              </div>
+
+              <div class="horizontal-bar"></div>
+              <span class="sub-header-2">Prevent data breaches</span>
+              <span class="content-2">Close the security gap of perimeter security while allowing user to collaborate effectively</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Mobile Layout -->
+        <div fxLayout="row" fxLayoutAlign="center" fxHide.gt-xs>
+
+          <div fxFlex="80">
+            <div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="1em">
+              <div fxLayout="row" fxLayoutAlign="center">
+                <img class="t-icon-img-3" src="assets/img/skydrm/competitive_advantage.svg" />
+              </div>
+              <div class="horizontal-bar"></div>
+              <span class="sub-header-2">Extend competitive advantage</span>
+              <span class="content-2">Protect trade secret and intellectual property</span>
+            </div>
+          </div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="center" fxHide.gt-xs>
+          <div fxFlex="80">
+            <div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="1em">
+              <div fxLayout="row" fxLayoutAlign="center">
+                <img class="t-icon-img-4" src="assets/img/skydrm/prevent_breaches.svg" />
+              </div>
+
+              <div class="horizontal-bar"></div>
+              <span class="sub-header-2">Prevent data breaches</span>
+              <span class="content-2">Close the security gap of perimeter security while allowing user to collaborate effectively</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>

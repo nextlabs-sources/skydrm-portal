@@ -1,0 +1,45 @@
+<div id="section2" fxLayout="row" fxLayoutAlign="center" class="section-panel">
+
+  <div class="content-panel">
+    <div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="1em">
+      <div fxLayout="row" fxLayoutAlign="center">
+        <span class="sub-header">Get Started</span>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="1em">
+        <input type="button" class="free-trial-button" value="Sign up for free" (click)="gotoRegister()" />
+
+        <div fxLayout="column" fxLayoutAlign="center">
+          <span class="vertical-divider"></span>
+        </div>
+
+        <div fxLayout="column" fxLayoutAlign="center">
+          <span class="signup-label">Have an account?</span>
+          <div fxLayout="row" fxLayoutAlign="center">
+            <span class="icon-padding">
+              <a href="{{loginURL()}}" target="_blank">
+                <span class="login-label">Login Here</span>
+              </a>
+            </span>
+          </div>
+        </div>
+
+        <div fxLayout="column" fxLayoutAlign="center">
+          <span class="vertical-divider"></span>
+        </div>
+
+        <div fxLayout="column" fxLayoutAlign="center">
+          <span class="signup-label">Looking for REST API?</span>
+          <div fxLayout="row" fxLayoutAlign="center">
+            <span class="icon-padding">
+              <a href="{{developerURL()}}" target="_blank">
+                <span class="login-label">Learn more</span>
+              </a>
+            </span>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+</div>

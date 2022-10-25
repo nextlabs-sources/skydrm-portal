@@ -1,0 +1,94 @@
+<div id="reachus" fxLayout="row" fxLayoutAlign="center" class="section-panel">
+
+    <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="1em">
+        <div fxLayout="row" fxLayoutAlign="center">
+            <span class="sub-header">Reach Us</span>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="center">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <span class="content-1">Contact us. We are here to help.</span>
+            </div>
+        </div>
+
+        <!-- Desktop/Laptop -->
+        <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="2em" fxHide.lt-md>
+            <div fxLayout="column" fxFlex="40vw" fxLayoutAlign="start">
+                <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="1em">
+                    <img class="icon-img" src="assets/img/skydrm/phone_contact.svg" alt="phone" />
+                    <div fxLayout="column" fxLayoutAlign="center">
+                        <span class="sub-header-2">Call 1800-898-3065</span>
+                        <span class="content-2">Grab your phone and talk to us now</span>
+                    </div>
+                </div>
+            </div>
+
+            <div fxLayout="column" fxLayoutAlign="start">
+                <div fxFlexclass="vertical-line"> </div>
+            </div>
+
+            <div fxLayout="column" fxFlex="40vw" fxLayoutAlign="start">
+              <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="1em">
+                <img class="icon-img" src="assets/img/skydrm/email_contact.svg" alt="email"/>
+                <div fxLayout="column" fxLayoutAlign="center">
+                  <span class="sub-header-2">Ask a question</span>
+                  <span class="content-2">Drop us a line to find out just how</span>
+                </div>
+              </div>
+              <!--
+              <div fxLayout="row" fxLayoutAlign="start">
+                <send-email></send-email>
+              </div>
+              -->
+            </div>
+        </div>
+
+        <!-- Mobile/Phone -->
+        <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="1em" fxHide.gt-sm>
+            <div fxLayout="column" fxLayoutAlign="center" fxFlex="90vw">
+                <div fxLayout="row" fxLayoutAlign="center" class="m-call-panel" >
+                     <div fxLayout="column" fxLayoutAlign="start">
+                         <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="1em">
+                             <div fxLayout="column" fxLayoutAlign="center">
+                                 <div fxLayout="row" fxLayoutAlign="center">
+                                    <img class="m-icon-img" src="assets/img/skydrm/phone_contact.svg" alt="phone"/>
+                                 </div>
+                             </div>
+                             <div fxLayout="column" fxLayoutAlign="center">
+                                 <span class="m-sub-header-2">Call 1800-898-3065</span>
+                                 <span class="m-content-2">Grab your phone and talk to us now</span>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+
+                <mat-divider></mat-divider>
+
+                <div fxLayout="row" fxLayoutAlign="center" class="m-email-panel">
+                    <div fxLayout="column" fxLayoutAlign="start">
+                        <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="1em">
+                            <div fxLayout="column" fxLayoutAlign="center">
+                                <div fxLayout="row" fxLayoutAlign="center">
+                                    <img class="m-icon-img" src="assets/img/skydrm/email_contact.svg" alt="email"/>
+                                </div>
+                            </div>
+                            <div fxLayout="column" fxLayoutAlign="start">
+                                <span class="m-sub-header-2">Send an email</span>
+                                <span class="m-content-2">Drop us a line to find out just how</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="center" fxLayoutAlign.gt-sm="end">
+            <div fxLayout="column" fxLayoutAlign="start" fxFlex="100vw" fxFlex.gt-sm="35vw">
+                <div fxLayout="row" fxLayoutAlign="center">
+                    <send-email></send-email>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

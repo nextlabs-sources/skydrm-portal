@@ -1,0 +1,90 @@
+<div fxLayout="column" fxLayoutAlign="start">
+    <div fxLayout="row" fxLayoutAlign="start">
+        <div class="left-panel">
+            <span class="icon is-medium arrow-panel" (click)="slideLeft()">
+                <i class="fas fa-2x fa-caret-left" aria-hidden="true"></i>
+            </span>
+        </div>
+
+        <div class="columns">
+            <ng-container *ngFor="let item of videos.list; let i = index">
+                <div class="column is-3" *ngIf="isVisible(i)">
+                    <div class="card">
+                        <div class="card-image">
+                            <div class="thumbnail-panel" (click)="openDialog(item)">
+                                <img class="boxed-img" width="100%" [src]="item.image_url" alt="">
+                            </div>    
+                        </div>
+                        <div class="card-content">
+                            <div class="my-content">{{item.desc}}</div>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>        
+
+        <div class="right-panel">
+            <span class="icon is-medium arrow-panel" (click)="slideRight()">
+                <i class="fas fa-2x fa-caret-right" aria-hidden="true"></i>
+            </span>
+        </div>
+    </div>
+</div>
+
+
+<div class="section" *ngIf="showDialog">
+    <div [ngClass]="dialogCss()" >
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title"></p>
+                <button class="delete" aria-label="close" (click)="closeDialog()"></button>
+            </header>
+
+            <section class="modal-card-body">
+                <figure class="image is-16by9">
+                    <iframe class="has-ratio" width="100%" height="auto" [src]="video_url"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </figure>
+                
+                <div class="img-panel">
+                    <div class="columns is-gapless">
+                        <div class="column is-1">
+                            <div class="left-panel">
+                                <span class="icon is-medium arrow-panel" (click)="popSlideLeft()">
+                                    <i class="fas fa-2x fa-caret-left" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <ng-container *ngFor="let item of videos.list; let i = index">
+                            <div class="column is-2" *ngIf="isPopVisible(i)">
+                                <div class="mini-img-panel">
+                                    <div class="mini-thumbnail-panel" (click)="selectVideo(item)">
+                                        <img alt="mini-thumbnail-image" [src]="item.image_url">
+                                    </div>
+                                    <div class="mini-content">
+                                        <span>{{item.desc}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-container>
+                        <div class="column is-1">
+                            <div class="right-panel">
+                                <span class="icon is-medium arrow-panel" (click)="popSlideRight()">
+                                    <i class="fas fa-2x fa-caret-right" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </section>
+
+            <section class="modal-card-foot">
+            </section>
+        </div>
+    </div>
+</div>

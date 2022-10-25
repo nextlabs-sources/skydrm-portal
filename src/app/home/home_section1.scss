@@ -1,0 +1,354 @@
+.section-panel {
+  background-image: url("/assets/img/skydrm/home1_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*
+    background-size:contain;
+    background-position:top;
+    */
+  background-color: #39974A;
+
+  font-family: Lato;
+  font-style: normal;
+  color: #FFFFFF;
+  max-width: 100%;
+  height: auto;
+}
+
+.old-version {
+  color: white;
+  padding: 1em 1em 0 0;
+  text-decoration: none;
+  text-align: right;
+  font-size: 1.2em;
+}
+
+.old-version:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.web-panel {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.sub-header-1 {
+    padding-top: 1.8em;
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: normal;
+}
+
+.content-1 {
+    padding-top: 1.2em;
+    font-weight: normal;
+    font-size: 1.3em;
+    line-height: normal;
+    padding-right: 3em;
+}
+
+
+.content-1-1 {
+    font-weight: normal;
+    font-size: 1.375em;
+    line-height: normal;
+}
+
+.img-panel {
+    max-width: 40vw;
+    max-height: 50vh;
+    /*
+    display: flex;
+    padding: 0.2em;
+    */
+}
+
+.img-item {
+    max-width: 40vw;
+    max-height: 50vh;
+}
+
+
+.img-container {
+    display: flex;
+    margin: 0;
+}
+
+
+.item-img-2 {
+    width: 45em;
+}
+
+.item-stack-img {
+     display :flex;
+     opacity: 1;
+     position: absolute;
+     margin: 0;
+     top: 1.5em;
+     left:5em;
+     right:10em;
+     bottom:0;
+     height: auto;
+     width: 73%;
+ }
+
+.item-stack-img-2 {
+     opacity: 1;
+     position: absolute;
+     margin:auto;
+     top:0;
+     right:0;
+     bottom:0;
+     left:0;
+}
+
+.img-container {
+    padding-top: 7vh;
+    padding-bottom: 3vh;
+}
+
+.icon-img-1 {
+    max-width: 6vw;
+    height: 8vh;
+}
+
+.icon-img-2 {
+    max-width: 10vw;
+    min-height: 8vh;
+}
+
+.icon-img-3 {
+    max-width: 9vw;
+    height: 8vh;
+    
+}
+
+.icon-img-4 {
+    max-width: 9vw;
+    min-height: 8vh;
+}
+
+.icon-img-5 {
+    opacity: 1;
+}
+
+.icon-img-6 {
+    opacity: 1;
+}
+
+.sub-header-2 {
+    font-weight: bold;
+    font-size: 1.25em;
+    line-height: normal;
+    text-align: center;
+
+    padding-bottom: 0.6em;
+
+}
+
+.content-2 {
+    font-weight: normal;
+    font-size: 1.0em;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.sub-header-3 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 0.9em;
+    line-height: normal;
+    color: #5FCEEA;
+}
+
+.horizontal-bar {
+    width: 90%;
+    height: 0.2em;
+    background: #FF664A;
+    margin-top: 1.0em;
+    margin-bottom: 0.5em;
+}
+
+.bottom-panel {
+    margin-top: 5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0.49%, #231F20 100%);
+    opacity: 0.5;
+
+}
+
+.vertical-divider-2 {
+    width: 1em;
+    height: 2em;
+    margin-left: 0.5em;
+    margin-right: 1em;
+    border-right: 1px solid #FFFFFF;
+}
+
+.content-center {
+    text-align: center;
+}
+
+/*
+ * Tablet CSS
+*/
+.t-panel {
+   padding-top: 6em;
+}
+
+.t-img-item {
+     display: flex;
+     width: 90%;
+     height: auto;
+}
+
+.t2-sub-header-1 {
+    font-weight: bold;
+    font-size: 1.7em;
+    line-height: 1.3em;
+    text-align: start;
+}
+
+.t2-content-1 {
+    font-weight: normal;
+    font-size: 1.0em;
+    line-height: 1.5em;
+    text-align: start;
+}
+
+.t-sub-header-1 {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+.t-content-1 {
+    font-weight: normal;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+
+.t-icon-img-1 {
+    width: 4em;
+    min-height: 5em;
+    padding-top: 1em;
+}
+
+.t-icon-img-2 {
+    width: 7em;
+    min-height: 5em;
+    padding-top: 1em;
+}
+
+.t-icon-img-3 {
+    width: 7em;
+    min-height: 5em;
+    padding-top: 1em;
+}
+
+.t-icon-img-4 {
+    width: 7em;
+    min-height: 5em;
+    padding-top: 1em;
+ }
+
+.t-vertical-divider-2 {
+    width: 0.2em;
+    height: 2em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    border-right: 1px solid #FFFFFF;
+}
+
+.t-sub-header-1 {
+    padding-top: 1em;
+    font-weight: bold;
+    font-size: 2.0em;
+    line-height: normal;
+}
+
+.t-content-1 {
+    padding-top: 1.2em;
+    font-weight: normal;
+    font-size: 1.0em;
+    line-height: normal;
+    padding-right: 3em;
+}
+
+
+/*
+ * Mobile CSS
+*/
+.m-panel {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.m-img-item {
+     display: flex;
+     width: 90%;
+     height: auto;
+}
+
+.m-sub-header-1 {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: normal;
+    text-align: center;
+}
+
+.m-content-1 {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: normal;
+    text-align: center;
+}
+
+.m-icon-img-1 {
+    width: 4em;
+    min-height: 5em;
+    padding-top: 1em;
+}
+
+.m-icon-img-2 {
+    width: 7em;
+    min-height: 5em;
+    padding-top: 1em;
+}
+
+.m-icon-img-3 {
+    width: 7em;
+    min-height: 5em;
+    padding-top: 1em;
+}
+
+.m-icon-img-4 {
+    width: 7em;
+    min-height: 5em;
+    padding-top: 1em;
+ }
+
+.m-vertical-divider-2 {
+    width: 0.2em;
+    height: 2em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    border-right: 1px solid #FFFFFF;
+}
+
+.test-left {
+    width: 10em;
+    background-color: #FF664A;
+}
+
+.test-right {
+    width: 10em;
+    background-color: #5FCEEA;
+}
